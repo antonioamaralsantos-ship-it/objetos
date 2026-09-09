@@ -12,5 +12,5 @@ cliente.enderecos = {
 };
 
 for (let chave in cliente) {
-    console.log(chave);
+    console.log(`A chave é ${chave} e o valor é ${cliente[chave]}`);
 }
