@@ -1,13 +1,13 @@
-const clientes = require("./cliente.json");
+const clientes = require("./clientes.json");
 
-function filtrarApartamentoSemComplemento(clientes){
- return clientes.filter ((cliente) => {
-    return (
-cliente.endereco.apartamento && !cliente.endereco.hasOwnproperty("complemento")
-    );
- });   
-}
+function filtraApartamentoSemcomplemento(clientes){
+    return clientes.filter ((cliente) => {
+        return (
+            cliente.endereco.apartamento && !cliente.endereco.hasOwnProperty("complemento")
+        );
+     });
+    }
 
-const filtrados = filtrarApartamentoSemComplemento(cliente);
+    const filtrados = filtraApartamentoSemcomplemento(clientes);
 
-console.log(filtrados);
+    console.log(filtrados);
